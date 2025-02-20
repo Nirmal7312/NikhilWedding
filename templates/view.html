@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ImgView</title>
+    <style>
+       body{
+      align-items: center;
+      background-color: #0c6136e3;
+    }
+    a{
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container" style=" align-items: center;">
+      <a href="{% url 'index'%}" type="button" class="btn btn-primary" style="font-size: 30px;">Back </a>
+     </div>
+     <div class="container" style=" display: flex;height: 80%; width: 80%; justify-content: center; align-items: center; margin-left: 10%; ">
+      {%load static%}
+        <img src="{% static img_name %}" alt="" style="height: 90%; width: 90%;">
+        
+     </div>
+    
+  </body>
+</html>
