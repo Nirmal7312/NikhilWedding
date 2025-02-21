@@ -3,7 +3,7 @@ from django.shortcuts import render
 import os
 from django.conf import settings  # Correct way to import settings
 def index(request):
-    ti = 364
+    ti = 160
     images = [f'img({i}).jpg' for i in range(1, ti + 1)]
     for img in images:
         print(img)
